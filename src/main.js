@@ -73,7 +73,7 @@ async function loadListings() {
 }
 async function loadLeaderboard() {
   const response = await fetch(
-    "public/leaderboard.json"
+    "/leaderboard.json"
   );
 
   const players = await response.json();
