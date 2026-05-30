@@ -77,7 +77,6 @@ async function loadLeaderboard() {
   );
 
   const players = await response.json();
-  loadLeaderboard()
 
   renderLeaderboard(players);
 }
@@ -150,3 +149,4 @@ if ('IntersectionObserver' in window) {
     item.classList.add('reveal-show');
   });
 }
+loadLeaderboard()
